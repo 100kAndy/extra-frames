@@ -1,0 +1,61 @@
+{
+	"geode": "5.10.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.extra-frames",
+	"name": "Extra Frames",
+	"version": "v2.0.0",
+	"developer": "yourname",
+	"description": "Adds input buffering and coyote time for cube jumps, with keybinds and an in-game menu.",
+	"settings": {
+		"general-title": {
+			"type": "title",
+			"name": "General"
+		},
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"buffer-ticks": {
+			"type": "int",
+			"name": "Buffer window (ticks)",
+			"description": "Clicks made this many physics ticks before landing still register. GD runs at 240 ticks/sec, so 4 ticks is about 16.7ms.",
+			"default": 4,
+			"min": 0,
+			"max": 24,
+			"control": { "slider": true }
+		},
+		"coyote-ticks": {
+			"type": "int",
+			"name": "Coyote window (ticks)",
+			"description": "Clicks made this many ticks after walking off a ledge still jump.",
+			"default": 3,
+			"min": 0,
+			"max": 24,
+			"control": { "slider": true }
+		},
+		"keys-title": {
+			"type": "title",
+			"name": "Keybinds"
+		},
+		"toggle-key": {
+			"type": "keybind",
+			"name": "Toggle Extra Frames",
+			"description": "Turn input buffering and coyote time on or off.",
+			"default": "F6",
+			"category": "universal"
+		},
+		"menu-key": {
+			"type": "keybind",
+			"name": "Open Extra Frames Menu",
+			"description": "Open the quick settings menu.",
+			"default": "F7",
+			"category": "universal"
+		}
+	}
+}
