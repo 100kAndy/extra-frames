@@ -27,6 +27,8 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           combine: true
+          bindings: geode-sdk/bindings
+          bindings-ref: 7f6c2a7
 
   package:
     name: Package builds
