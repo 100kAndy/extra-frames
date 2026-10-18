@@ -28,7 +28,7 @@ jobs:
         with:
           combine: true
           bindings: geode-sdk/bindings
-          bindings-ref: 7f6c2a7
+          bindings-ref: f050fd74ad531b0827377c97510cb807903ff1b3
 
   package:
     name: Package builds
